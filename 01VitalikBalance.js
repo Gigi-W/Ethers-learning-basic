@@ -1,11 +1,8 @@
 // 查询 vitalik 在 vitalik.eth热钱包的 ETH 余额
 import { ethers } from "ethers";
-const INFURA_API_KEY = "e0db567b246d496bb7259cfbf881d959";
-const infura_url = `https://mainnet.infura.io/v3/${INFURA_API_KEY}`;
-const provider = new ethers.JsonRpcProvider(infura_url);
+import { INFURA_MAINNET_URL } from "./config";
 
-// const ETHERSCAN_API_KEY = "WPJYB3SZRY4HX7SJFJ5RN8GUE2GYV19B1J";
-// const provider = new ethers.EtherscanProvider("mainnet", ETHERSCAN_API_KEY);
+const provider = new ethers.JsonRpcProvider(INFURA_MAINNET_URL);
 
 const main = async () => {
   const balance = await provider.getBalance("vitalik.eth");

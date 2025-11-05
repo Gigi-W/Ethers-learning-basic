@@ -5,8 +5,7 @@ const bscRpcUrl = "https://bsc-dataseed.binance.org/";
 const provider = new ethers.JsonRpcProvider(bscRpcUrl);
 
 // 2. 替换成你的「币安 Web3 钱包 BSC 地址」（关键！复制自己的地址）
-const YOUR_BINANCE_WEB3_BSC_ADDRESS =
-  "0x764f306251c8dfd391fc85a6e059fdd054fd6ee2"; // 例：0x1234567890abcdef1234567890abcdef12345678
+const YOUR_BINANCE_WEB3_BSC_ADDRESS = ""; // 例：0x1234567890abcdef1234567890abcdef12345678
 
 const main = async () => {
   try {
